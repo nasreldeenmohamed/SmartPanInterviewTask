@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".modules.register.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/editTextRegisterName"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:padding="4dp" />
+            <!--android:text="@{user.name}" />-->
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/editTextRegisterUsername"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:padding="4dp" />
+            <!--android:text="@{user.username}" />-->
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/editTextRegisterPassword"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+            <!--android:text="@{user.password}" />-->
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/editTextRegisterConfirmPassword"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/editTextRegisterMail"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+            <!--android:text="@{user.email}"-->
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/editTextRegisterMobile"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/mobile"
+                android:inputType="phone" />
+            <!--android:text="@{user.mobileNumber}" -->
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="Gender">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonRegisterRegister"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/register" />
+    </LinearLayout>
+</ScrollView>

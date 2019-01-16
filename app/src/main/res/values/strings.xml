@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SmartPanInterviewTask</string>
+    <string name="google_maps_key">AIzaSyBYRRhEhy73A6eTc3PZQmhwJZdJWC973Tk</string>
+    <!--<string name="google_maps_key">AIzaSyC5_WSql1w3Hg6yb_FHYU72MCLq_1xPcI0</string>-->
+    <!--<string name="google_maps_key">AIzaSyD-XWBo7QSsMBvvtJ5CiJ0cd8j7TQMWp-o</string>-->
+
+    <string name="gps_enable">GPS is disabled, please enable it to show your location on map.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="haven_t_an_account_register_now">Haven\'t an account</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="no_internet_con">No Internet Connection..</string>
+    <string name="home">HOME</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map">Map</string>
+    <string name="countries">Countries</string>
+    <string name="speakers">Contacts</string>
+    <string name="my_location">My Location</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
