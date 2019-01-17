@@ -6,6 +6,7 @@ import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.content.ContentResolver;
 import android.database.Cursor;
+import android.os.AsyncTask;
 import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.util.Log;
@@ -24,7 +25,7 @@ public class ContactsViewModel extends AndroidViewModel {
     public ContactsViewModel(@NonNull Application application) {
         super(application);
 
-        ContactsLiveData = getContactList();
+        new GetContactsAsyncTask().execute("");
     }
 
     public LiveData<List<PhoneContact>> getContactsLiveData() {
@@ -68,7 +69,30 @@ public class ContactsViewModel extends AndroidViewModel {
         if (cur != null) {
             cur.close();
         }
-        ((MutableLiveData<List<PhoneContact>>) phoneContactsListLiveData).setValue(phoneContacts);
+        ((MutableLiveData<List<PhoneContact>>) phoneContactsListLiveData).postValue(phoneContacts);
         return phoneContactsListLiveData;
     }
+
+    private class GetContactsAsyncTask extends AsyncTask<String, Void, String> {
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            ContactsLiveData = getContactList();
+
+            return "Executed";
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+
+        }
+
+        @Override
+        protected void onPreExecute() {}
+
+        @Override
+        protected void onProgressUpdate(Void... values) {}
+    }
+
 }
